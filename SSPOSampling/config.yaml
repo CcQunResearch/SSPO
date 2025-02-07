@@ -1,0 +1,11 @@
+dpo_sampling:
+  model_name_or_path: path_to_sft_model
+  dpo_dataset_path: raw/raw_en_demo.json
+  save_path: ../FDCOTraining/Data/dpo/dpo_en_demo.json
+  template: default
+  max_token_nums: 24 # zh2en:24, zh2th:80, zh2es:32
+  processes_per_gpu: 2 # 7B:2, 14B:1
+  first_gpu: 0
+  total_gpu_num: 8
+  reversa_flag: False
+  
